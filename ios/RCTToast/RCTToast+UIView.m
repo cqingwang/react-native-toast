@@ -146,7 +146,7 @@ static UIView *rctPrevToast = NULL;
   }
 }
 
-- (void)hideToast:(UIView *)toast {
+- (void)hideRctToast:(UIView *)toast {
     [UIView animateWithDuration:CSToastFadeDuration
                           delay:0.0
                         options:(UIViewAnimationOptionCurveEaseIn | UIViewAnimationOptionBeginFromCurrentState)
@@ -160,7 +160,7 @@ static UIView *rctPrevToast = NULL;
 #pragma mark - Events
 
 - (void)toastTimerDidFinish:(NSTimer *)timer {
-    [self hideToast:(UIView *)timer.userInfo];
+    [self hideRctToast:(UIView *)timer.userInfo];
 }
 
 - (void)handleToastTapped:(UITapGestureRecognizer *)recognizer {
