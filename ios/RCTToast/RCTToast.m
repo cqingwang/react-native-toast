@@ -1,15 +1,15 @@
 #import <UIKit/UIKit.h>
 #import <React/RCTLog.h>
 #import <React/RCTBridgeModule.h>
-#import "Toast+UIView.h"
+#import "RCTToast+UIView.h"
 
 
-@interface Toast : NSObject <RCTBridgeModule>
+@interface RCTToast : NSObject <RCTBridgeModule>
 @end
 
-@implementation Toast
+@implementation RCTToast
 
-RCT_EXPORT_MODULE(Toast)
+RCT_EXPORT_MODULE(RCTToast)
 
 
 RCT_EXPORT_METHOD(show:(NSDictionary *)options) {
